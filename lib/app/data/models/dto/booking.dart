@@ -1,4 +1,5 @@
 class Booking {
+ late final String bookingId;
  late final String userId;
  late final String restaurantId;
  late final Date date;
@@ -8,6 +9,7 @@ class Booking {
 
   Booking(
       {
+        required this.bookingId,
         required this.userId,
         required this.restaurantId,
         required this.date,
@@ -16,6 +18,7 @@ class Booking {
         required this.paymentStatus});
 
   Booking.fromJson(Map<String, dynamic> json) {
+    bookingId = json['bookingId'];
     userId = json['userId'];
     restaurantId = json['restaurantId'];
     date = (json['date'] != null ? Date.fromJson(json['date']) : null)!;
@@ -26,6 +29,7 @@ class Booking {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
+    data['bookingId'] = bookingId;
     data['userId'] = userId;
     data['restaurantId'] = restaurantId;
     data['date'] = date.toJson();
