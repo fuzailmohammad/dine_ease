@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:starter/app/routes/app_pages.dart';
-import 'package:starter/utils/storage/storage_utils.dart';
+import 'package:dine_ease/app/routes/app_pages.dart';
+import 'package:dine_ease/utils/storage/storage_utils.dart';
 
 class SplashController extends GetxController {
   @override

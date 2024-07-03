@@ -92,7 +92,7 @@ BEGIN
             VALUE "CompanyName", "com.example" "\0"
             VALUE "FileDescription", "dine_ease" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "dine_ease" "\0"
+            VALUE "InternalName", "com.fuzail.dineease" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
             VALUE "OriginalFilename", "dine_ease.exe" "\0"
             VALUE "ProductName", "dine_ease" "\0"

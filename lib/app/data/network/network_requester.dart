@@ -1,9 +1,9 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:starter/app/data/values/constants.dart';
-import 'package:starter/app/data/values/env.dart';
-import 'package:starter/utils/helper/exception_handler.dart';
+import 'package:dine_ease/app/data/values/constants.dart';
+import 'package:dine_ease/app/data/values/env.dart';
+import 'package:dine_ease/utils/helper/exception_handler.dart';
 
 class NetworkRequester {
   late Dio _dio;

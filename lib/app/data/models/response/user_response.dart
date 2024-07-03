@@ -1,4 +1,4 @@
-import 'package:starter/app/data/models/dto/user.dart';
+import 'package:dine_ease/app/data/models/dto/user.dart';
 
 class UserResponse {
   late User? data;

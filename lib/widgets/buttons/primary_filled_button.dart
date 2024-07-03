@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:starter/app/theme/app_colors.dart';
-import 'package:starter/app/theme/styles.dart';
+import 'package:dine_ease/app/theme/app_colors.dart';
+import 'package:dine_ease/app/theme/styles.dart';
 
 class PrimaryFilledButton extends StatelessWidget {
   final String text;

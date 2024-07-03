@@ -1,6 +1,6 @@
+import 'package:dine_ease/app/app.dart';
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:starter/app/app.dart';
 
 void main() async {
   await initGetStorage();

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:starter/app/app_binding.dart';
-import 'package:starter/app/data/values/constants.dart';
-import 'package:starter/app/data/values/env.dart';
-import 'package:starter/app/routes/app_pages.dart';
-import 'package:starter/app/theme/app_theme.dart';
+import 'package:dine_ease/app/app_binding.dart';
+import 'package:dine_ease/app/data/values/constants.dart';
+import 'package:dine_ease/app/data/values/env.dart';
+import 'package:dine_ease/app/routes/app_pages.dart';
+import 'package:dine_ease/app/theme/app_theme.dart';
 
 class App extends StatelessWidget {
   @override

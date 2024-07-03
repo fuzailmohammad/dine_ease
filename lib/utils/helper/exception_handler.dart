@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:starter/app/data/models/response/error_response.dart';
-import 'package:starter/app/data/values/strings.dart';
+import 'package:dine_ease/app/data/models/response/error_response.dart';
+import 'package:dine_ease/app/data/values/strings.dart';
 
 class APIException implements Exception {
   final String message;

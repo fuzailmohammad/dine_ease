@@ -1,10 +1,10 @@
-import 'package:starter/app/data/models/dto/response.dart';
-import 'package:starter/app/data/models/dto/user.dart';
-import 'package:starter/app/data/models/request/auth_request.dart';
-import 'package:starter/app/data/models/response/user_response.dart';
-import 'package:starter/app/data/values/urls.dart';
-import 'package:starter/base/base_repository.dart';
-import 'package:starter/utils/helper/exception_handler.dart';
+import 'package:dine_ease/app/data/models/dto/response.dart';
+import 'package:dine_ease/app/data/models/dto/user.dart';
+import 'package:dine_ease/app/data/models/request/auth_request.dart';
+import 'package:dine_ease/app/data/models/response/user_response.dart';
+import 'package:dine_ease/app/data/values/urls.dart';
+import 'package:dine_ease/base/base_repository.dart';
+import 'package:dine_ease/utils/helper/exception_handler.dart';
 
 class UserRepository extends BaseRepository {
   Future<RepoResponse<bool>> sendOTP(SendOTPRequest data) async {
