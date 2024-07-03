@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "396066408474",
+    "project_id": "dine-ease-e2337",
+    "storage_bucket": "dine-ease-e2337.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396066408474:android:ce12e23516fb59404069a3",
+        "android_client_info": {
+          "package_name": "com.fuzail.dineease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396066408474-phnim6o6qt3h2b06v6oauibgb6hpsmub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvxa0bqJuBWGS_5wbEpqKif-ov5mcXw8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396066408474-phnim6o6qt3h2b06v6oauibgb6hpsmub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

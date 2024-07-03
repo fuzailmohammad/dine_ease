@@ -1,33 +1,32 @@
 class User {
-  late String name;
-  late String phone;
-  late String email;
-  late List<String> address;
-  late String jwtToken;
+ late final String userId;
+ late final String name;
+ late final String email;
+ late final String profilePicture;
+ late final List<String>? favoriteRestaurants;
 
-  User({
-    required this.name,
-    required this.phone,
-    required this.email,
-    required this.address,
-    required this.jwtToken,
-  });
+  User(
+      {required this.userId,
+        required this.name,
+        required this.email,
+        required this.profilePicture,
+        this.favoriteRestaurants});
 
   User.fromJson(Map<String, dynamic> json) {
+    userId = json['userId'];
     name = json['name'];
-    phone = json['phone'];
     email = json['email'];
-    address = json['address'].cast<String>();
-    jwtToken = json['jwtToken'];
+    profilePicture = json['profilePicture'];
+    favoriteRestaurants = json['favoriteRestaurants'].cast<String>();
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['name'] = this.name;
-    data['phone'] = this.phone;
-    data['email'] = this.email;
-    data['address'] = this.address;
-    data['jwtToken'] = this.jwtToken;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['userId'] = userId;
+    data['name'] = name;
+    data['email'] = email;
+    data['profilePicture'] = profilePicture;
+    data['favoriteRestaurants'] = favoriteRestaurants;
     return data;
   }
 }
