@@ -64,7 +64,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '396066408474',
     projectId: 'dine-ease-e2337',
     storageBucket: 'dine-ease-e2337.appspot.com',
-    iosClientId: '396066408474-7l19pq38bj8n734ar7msqsikfop5ipsn.apps.googleusercontent.com',
+    iosClientId:
+        '396066408474-7l19pq38bj8n734ar7msqsikfop5ipsn.apps.googleusercontent.com',
     iosBundleId: 'com.fuzail.dineease',
   );
 
@@ -74,7 +75,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '396066408474',
     projectId: 'dine-ease-e2337',
     storageBucket: 'dine-ease-e2337.appspot.com',
-    iosClientId: '396066408474-7l19pq38bj8n734ar7msqsikfop5ipsn.apps.googleusercontent.com',
+    iosClientId:
+        '396066408474-7l19pq38bj8n734ar7msqsikfop5ipsn.apps.googleusercontent.com',
     iosBundleId: 'com.fuzail.dineease',
   );
 

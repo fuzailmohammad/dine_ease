@@ -7,7 +7,8 @@ import 'package:dine_ease/utils/storage/storage_utils.dart';
 class ConfigRepository extends BaseRepository {
   saveAppConfig() async {
     final response = await controller.get(path: URLs.appConfig);
-    if (!(response is APIException))
+    if (response is! APIException) {
       Storage.setAppConfig(AppConfigResponse.fromJson(response).data);
+    }
   }
 }

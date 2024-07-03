@@ -1,14 +1,17 @@
 import 'package:get/get.dart';
-import 'package:dine_ease/app/modules/auth/login/bindings/auth_login_binding.dart';
-import 'package:dine_ease/app/modules/auth/login/views/auth_login_view.dart';
-import 'package:dine_ease/app/modules/auth/signup/bindings/auth_signup_binding.dart';
-import 'package:dine_ease/app/modules/auth/signup/views/auth_signup_view.dart';
-import 'package:dine_ease/app/modules/auth/verify-otp/bindings/auth_verify_otp_binding.dart';
-import 'package:dine_ease/app/modules/auth/verify-otp/views/auth_verify_otp_view.dart';
-import 'package:dine_ease/app/modules/home/bindings/home_binding.dart';
-import 'package:dine_ease/app/modules/home/views/home_view.dart';
-import 'package:dine_ease/app/modules/splash/bindings/splash_binding.dart';
-import 'package:dine_ease/app/modules/splash/views/splash_view.dart';
+
+import '../modules/auth/login/bindings/auth_login_binding.dart';
+import '../modules/auth/login/views/auth_login_view.dart';
+import '../modules/booking_detail/bindings/booking_detail_binding.dart';
+import '../modules/booking_detail/views/booking_detail_view.dart';
+import '../modules/home/bindings/home_binding.dart';
+import '../modules/home/views/home_view.dart';
+import '../modules/onboarding/bindings/onboarding_binding.dart';
+import '../modules/onboarding/views/onboarding_view.dart';
+import '../modules/restaurant_detail/bindings/restaurant_detail_binding.dart';
+import '../modules/restaurant_detail/views/restaurant_detail_view.dart';
+import '../modules/splash/bindings/splash_binding.dart';
+import '../modules/splash/views/splash_view.dart';
 
 part 'app_routes.dart';
 
@@ -16,28 +19,33 @@ class AppPages {
   static final pages = [
     GetPage(
       name: Routes.SPLASH,
-      page: () => SplashView(),
+      page: () => const SplashView(),
       binding: SplashBinding(),
     ),
     GetPage(
       name: Routes.AUTH_LOGIN,
-      page: () => AuthLoginView(),
+      page: () => const AuthLoginView(),
       binding: AuthLoginBinding(),
     ),
     GetPage(
-      name: Routes.AUTH_VERIFY_OTP,
-      page: () => AuthVerifyOtpView(),
-      binding: AuthVerifyOtpBinding(),
-    ),
-    GetPage(
-      name: Routes.AUTH_SIGNUP,
-      page: () => AuthSignupView(),
-      binding: AuthSignupBinding(),
-    ),
-    GetPage(
       name: Routes.HOME,
-      page: () => HomeView(),
+      page: () => const HomeView(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: Routes.ONBOARDING,
+      page: () => const OnboardingView(),
+      binding: OnboardingBinding(),
+    ),
+    GetPage(
+      name: Routes.RESTAURANT_DETAIL,
+      page: () => const RestaurantDetailView(),
+      binding: RestaurantDetailBinding(),
+    ),
+    GetPage(
+      name: Routes.BOOKING_DETAIL,
+      page: () => const BookingDetailView(),
+      binding: BookingDetailBinding(),
     ),
   ];
 }

@@ -1,7 +1,7 @@
 class Strings {
   Strings._privateConstructor();
 
-  static const appName = 'Sample App';
+  static const appName = 'Dine Ease';
   static const empty = '';
   static const mobileNumber = 'Mobile Number';
   static const getOTP = 'Get OTP';

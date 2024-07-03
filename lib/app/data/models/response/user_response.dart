@@ -7,14 +7,14 @@ class UserResponse {
   UserResponse({required this.data, required this.statusCode});
 
   UserResponse.fromJson(Map<String, dynamic> json) {
-    this.data = json['data'] == null ? null : User.fromJson(json['data']);
-    this.statusCode = json['statusCode'];
+    data = json['data'] == null ? null : User.fromJson(json['data']);
+    statusCode = json['statusCode'];
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['data'] = this.data?.toJson();
-    data['statusCode'] = this.statusCode;
+    data['statusCode'] = statusCode;
     return data;
   }
 }

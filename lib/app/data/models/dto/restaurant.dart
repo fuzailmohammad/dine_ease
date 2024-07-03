@@ -70,11 +70,12 @@ class Coordinates {
 }
 
 class Reviews {
- late final String userId;
- late final String reviewText;
- late final int rating;
+  late final String userId;
+  late final String reviewText;
+  late final int rating;
 
-  Reviews({required this.userId, required this.reviewText, required this.rating});
+  Reviews(
+      {required this.userId, required this.reviewText, required this.rating});
 
   Reviews.fromJson(Map<String, dynamic> json) {
     userId = json['userId'];

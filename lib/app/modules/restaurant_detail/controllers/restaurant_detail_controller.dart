@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-class AuthVerifyOtpController extends GetxController {
-  //TODO: Implement AuthVerifyOtpController
+class RestaurantDetailController extends GetxController {
+  //TODO: Implement RestaurantDetailController
 
   final count = 0.obs;
   @override
@@ -15,6 +15,9 @@ class AuthVerifyOtpController extends GetxController {
   }
 
   @override
-  void onClose() {}
+  void onClose() {
+    super.onClose();
+  }
+
   void increment() => count.value++;
 }

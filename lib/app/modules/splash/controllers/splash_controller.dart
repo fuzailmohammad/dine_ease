@@ -1,6 +1,6 @@
-import 'package:get/get.dart';
 import 'package:dine_ease/app/routes/app_pages.dart';
 import 'package:dine_ease/utils/storage/storage_utils.dart';
+import 'package:get/get.dart';
 
 class SplashController extends GetxController {
   @override
@@ -10,11 +10,12 @@ class SplashController extends GetxController {
   }
 
   _startOnboarding() async {
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 3));
 
-    if (Storage.isUserExists())
+    if (Storage.isUserExists()) {
       Get.offAllNamed(Routes.HOME);
-    else
+    } else {
       Get.offAllNamed(Routes.AUTH_LOGIN);
+    }
   }
 }

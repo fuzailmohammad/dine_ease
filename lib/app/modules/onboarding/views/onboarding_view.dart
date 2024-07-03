@@ -2,19 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/auth_verify_otp_controller.dart';
+import '../controllers/onboarding_controller.dart';
 
-class AuthVerifyOtpView extends GetView<AuthVerifyOtpController> {
+class OnboardingView extends GetView<OnboardingController> {
+  const OnboardingView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AuthVerifyOtpView'),
+        title: const Text('OnboardingView'),
         centerTitle: true,
       ),
-      body: Center(
+      body: const Center(
         child: Text(
-          'AuthVerifyOtpView is working',
+          'OnboardingView is working',
           style: TextStyle(fontSize: 20),
         ),
       ),

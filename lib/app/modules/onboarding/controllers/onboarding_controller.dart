@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-class AuthSignupController extends GetxController {
-  //TODO: Implement AuthSignupController
+class OnboardingController extends GetxController {
+  //TODO: Implement OnboardingController
 
   final count = 0.obs;
   @override
@@ -15,6 +15,9 @@ class AuthSignupController extends GetxController {
   }
 
   @override
-  void onClose() {}
+  void onClose() {
+    super.onClose();
+  }
+
   void increment() => count.value++;
 }

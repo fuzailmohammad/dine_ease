@@ -1,6 +1,6 @@
-import 'package:get_storage/get_storage.dart';
 import 'package:dine_ease/app/data/models/dto/user.dart';
 import 'package:dine_ease/app/data/models/response/app_config_response.dart';
+import 'package:get_storage/get_storage.dart';
 
 class Storage {
   Storage._privateConstructor();

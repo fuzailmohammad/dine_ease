@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:dine_ease/app/theme/app_colors.dart';
 import 'package:dine_ease/app/theme/styles.dart';
 import 'package:dine_ease/utils/helper/text_field_wrapper.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class CustomTextField extends StatelessWidget {
   final String hintText;
@@ -11,7 +11,8 @@ class CustomTextField extends StatelessWidget {
   final TextFieldWrapper wrapper;
   final bool isEnabled;
 
-  CustomTextField({
+  const CustomTextField({
+    super.key,
     required this.wrapper,
     required this.hintText,
     this.maxLength,
@@ -37,25 +38,25 @@ class CustomTextField extends StatelessWidget {
           hintText: hintText,
           enabled: isEnabled,
           errorBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: AppColors.primaryColor,
             ),
             borderRadius: BorderRadius.circular(8.0),
           ),
           border: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: AppColors.primaryColor,
             ),
             borderRadius: BorderRadius.circular(8.0),
           ),
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: AppColors.primaryColor,
             ),
             borderRadius: BorderRadius.circular(8.0),
           ),
           disabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: AppColors.primaryColor,
             ),
             borderRadius: BorderRadius.circular(8.0),

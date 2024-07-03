@@ -1,21 +1,20 @@
 class Booking {
- late final String bookingId;
- late final String userId;
- late final String restaurantId;
- late final Date date;
- late final String time;
- late final int numberOfPeople;
- late final String paymentStatus;
+  late final String bookingId;
+  late final String userId;
+  late final String restaurantId;
+  late final Date date;
+  late final String time;
+  late final int numberOfPeople;
+  late final String paymentStatus;
 
   Booking(
-      {
-        required this.bookingId,
-        required this.userId,
-        required this.restaurantId,
-        required this.date,
-        required this.time,
-        required this.numberOfPeople,
-        required this.paymentStatus});
+      {required this.bookingId,
+      required this.userId,
+      required this.restaurantId,
+      required this.date,
+      required this.time,
+      required this.numberOfPeople,
+      required this.paymentStatus});
 
   Booking.fromJson(Map<String, dynamic> json) {
     bookingId = json['bookingId'];
@@ -33,7 +32,7 @@ class Booking {
     data['userId'] = userId;
     data['restaurantId'] = restaurantId;
     data['date'] = date.toJson();
-      data['time'] = time;
+    data['time'] = time;
     data['numberOfPeople'] = numberOfPeople;
     data['paymentStatus'] = paymentStatus;
     return data;
@@ -41,8 +40,8 @@ class Booking {
 }
 
 class Date {
- late final int seconds;
- late final int nanoseconds;
+  late final int seconds;
+  late final int nanoseconds;
 
   Date({required this.seconds, required this.nanoseconds});
 

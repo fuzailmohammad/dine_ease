@@ -1,16 +1,16 @@
 class User {
- late final String userId;
- late final String name;
- late final String email;
- late final String profilePicture;
- late final List<String>? favoriteRestaurants;
+  late final String userId;
+  late final String name;
+  late final String email;
+  late final String profilePicture;
+  late final List<String>? favoriteRestaurants;
 
   User(
       {required this.userId,
-        required this.name,
-        required this.email,
-        required this.profilePicture,
-        this.favoriteRestaurants});
+      required this.name,
+      required this.email,
+      required this.profilePicture,
+      this.favoriteRestaurants});
 
   User.fromJson(Map<String, dynamic> json) {
     userId = json['userId'];

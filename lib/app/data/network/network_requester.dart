@@ -1,9 +1,9 @@
 import 'dart:developer';
 
-import 'package:dio/dio.dart';
 import 'package:dine_ease/app/data/values/constants.dart';
 import 'package:dine_ease/app/data/values/env.dart';
 import 'package:dine_ease/utils/helper/exception_handler.dart';
+import 'package:dio/dio.dart';
 
 class NetworkRequester {
   late Dio _dio;
@@ -14,8 +14,8 @@ class NetworkRequester {
 
   void prepareRequest() {
     BaseOptions dioOptions = BaseOptions(
-      connectTimeout: Duration(milliseconds: Timeouts.CONNECT_TIMEOUT),
-      receiveTimeout: Duration(milliseconds: Timeouts.RECEIVE_TIMEOUT),
+      connectTimeout: const Duration(milliseconds: Timeouts.CONNECT_TIMEOUT),
+      receiveTimeout: const Duration(milliseconds: Timeouts.RECEIVE_TIMEOUT),
       baseUrl: Env.baseURL,
       contentType: Headers.formUrlEncodedContentType,
       responseType: ResponseType.json,
