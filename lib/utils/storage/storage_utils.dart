@@ -15,6 +15,8 @@ class Storage {
 
   static User getUser() => User.fromJson(_box.read(StorageKeys.USER));
 
+  static void clearUser() => _box.remove(StorageKeys.USER);
+
   static void setUser(User? user) =>
       _box.write(StorageKeys.USER, user?.toJson());
 

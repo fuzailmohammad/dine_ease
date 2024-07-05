@@ -5,4 +5,25 @@ class AppColors {
   static const white = Color(0xFFFFFFFF);
   static final shimmerBaseColor = Colors.grey[200]!;
   static final shimmerHighlightColor = Colors.grey[350]!;
+  static const brightWhite = Color(0xFFF4F4F4);
+  static const lightGreen = Color(0xFF53E88B);
+  static const mediumGreen = Color(0xFF15BE77);
+  static const lightGrey = Color(0xFFF6F6F6);
+  static const darkGrey = Color(0xFFA9A9A9);
+  static const darkGreen = Color(0xFF2A4938);
+  static const mediumDarkGreen = Color(0xFF2B5740);
+  static const darkBlue = Color(0xFF3C5A9A);
+  static const darkOrange = Color(0xFFDA6317);
+  static const lightOrange = Color(0xFFFEF6EE);
+  static const orange = Color(0xFFE86D28);
+  static const goldYellow = Color(0xFFF8D52B);
+  static const lightCream = Color(0xFFFFF7EE);
+  static const red = Color(0xFFFF4B4B);
+  static const lightBrown = Color(0xFFE68A2E);
+  static const lightRed = Color(0xFFFFE9E9);
+  static const extraDarkGreen = Color(0xFF29382F);
+  static const mediumBlack = Color(0xFF262826);
+  static const brown = Color(0xFF251D0F);
+
+ static const  List<Color> primaryGradient = [AppColors.lightGreen, AppColors.mediumGreen];
 }

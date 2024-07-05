@@ -1,32 +1,31 @@
+import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
+
 class User {
-  late final String userId;
-  late final String name;
+  late final String uid;
   late final String email;
-  late final String profilePicture;
-  late final List<String>? favoriteRestaurants;
+  late final String displayName;
+  late final String photoURL;
 
-  User(
-      {required this.userId,
-      required this.name,
-      required this.email,
-      required this.profilePicture,
-      this.favoriteRestaurants});
+  User({required this.uid, required this.email, required this.displayName, required this.photoURL});
 
-  User.fromJson(Map<String, dynamic> json) {
-    userId = json['userId'];
-    name = json['name'];
-    email = json['email'];
-    profilePicture = json['profilePicture'];
-    favoriteRestaurants = json['favoriteRestaurants'].cast<String>();
-  }
+  User.fromFirebaseUser(firebase_auth.User firebaseUser)
+      : uid = firebaseUser.uid,
+        email = firebaseUser.email ?? '',
+        displayName = firebaseUser.displayName ?? '',
+        photoURL = firebaseUser.photoURL ?? '';
+
+  User.fromJson(Map<String, dynamic> json)
+      : uid = json['uid'],
+        email = json['email'],
+        displayName = json['displayName'],
+        photoURL = json['photoURL'];
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['userId'] = userId;
-    data['name'] = name;
-    data['email'] = email;
-    data['profilePicture'] = profilePicture;
-    data['favoriteRestaurants'] = favoriteRestaurants;
-    return data;
+    return {
+      'uid': uid,
+      'email': email,
+      'displayName': displayName,
+      'photoURL': photoURL,
+    };
   }
 }

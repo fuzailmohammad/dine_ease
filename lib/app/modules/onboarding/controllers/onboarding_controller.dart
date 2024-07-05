@@ -1,23 +1,42 @@
+import 'package:dine_ease/app/data/values/images.dart';
+import 'package:dine_ease/app/data/values/strings.dart';
+import 'package:dine_ease/app/routes/app_pages.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class OnboardingController extends GetxController {
   //TODO: Implement OnboardingController
+  PageController pageController = PageController();
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  List<OnboardingDto> onboardingObject = [
+    OnboardingDto(
+        title: Strings.onboardingTitleOne,
+        subtitle: Strings.onboardingSubtitleOne,
+        imageUrl: Images.onboardingOne),
+    OnboardingDto(
+        title: Strings.onboardingTitleTwo,
+        subtitle: Strings.onboardingSubtitleTwo,
+        imageUrl: Images.onboardingTwo),
+  ];
+
+  final RxInt _currentPage = 0.obs;
+
+  int get currentPage => _currentPage.value;
+
+  void onTapNext(int index) {
+    if (index == currentPage) {
+      Get.offAllNamed(Routes.AUTH_LOGIN);
+    }
+    _currentPage.value = index;
+    pageController.jumpToPage(index);
   }
+}
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+class OnboardingDto {
+  final String title;
+  final String subtitle;
+  final String imageUrl;
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
+  OnboardingDto(
+      {required this.title, required this.subtitle, required this.imageUrl});
 }

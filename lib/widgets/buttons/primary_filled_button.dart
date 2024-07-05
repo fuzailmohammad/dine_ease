@@ -13,13 +13,27 @@ class PrimaryFilledButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: onTap,
-      color: AppColors.primaryColor,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Text(
-          text,
-          style: Styles.tsWhiteRegular18,
+      padding: EdgeInsets.zero,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      child: Ink(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.0),
+          gradient: const LinearGradient(
+            begin: Alignment.bottomLeft,
+            end: Alignment.topRight,
+            colors: AppColors.primaryGradient,
+          ),
+        ),
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Text(
+              text,
+              style: Styles.tsWhiteBold18,
+            ),
+          ),
         ),
       ),
     );
