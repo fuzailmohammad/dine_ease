@@ -47,6 +47,7 @@ class DashboardView extends GetView<DashboardController> {
                         imageUrl: restaurant.image,
                         restaurantTitle: restaurant.name,
                         restaurantSubtitle: restaurant.address,
+                        onTap: () => controller.goToRestaurant(index),
                       );
                     },
                   );
@@ -66,45 +67,50 @@ class RestaurantTab extends StatelessWidget {
     required this.imageUrl,
     required this.restaurantTitle,
     required this.restaurantSubtitle,
+    required this.onTap,
   });
 
   final String imageUrl;
   final String restaurantTitle;
   final String restaurantSubtitle;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      width: Get.width / 2.5,
-      decoration: BoxDecoration(
-          boxShadow: kElevationToShadow[1],
-          borderRadius: BorderRadius.circular(10),
-          color: AppColors.white),
-      child: Column(
-        children: [
-          Image.network(
-            imageUrl,
-            height: 80,
-            width: 80,
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Text(
-            restaurantTitle,
-            style: Styles.tsPrimaryColorRegular18,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(
-            height: 2.5,
-          ),
-          Text(
-            restaurantSubtitle,
-            style: Styles.tsPrimaryColorSemiLight14,
-            textAlign: TextAlign.center,
-          ),
-        ],
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        width: Get.width / 2.5,
+        decoration: BoxDecoration(
+            boxShadow: kElevationToShadow[1],
+            borderRadius: BorderRadius.circular(10),
+            color: AppColors.white),
+        child: Column(
+          children: [
+            Image.network(
+              imageUrl,
+              height: 80,
+              width: 80,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Text(
+              restaurantTitle,
+              style: Styles.tsPrimaryColorRegular18,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(
+              height: 2.5,
+            ),
+            Text(
+              restaurantSubtitle,
+              style: Styles.tsPrimaryColorSemiLight14,
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
       ),
     );
   }

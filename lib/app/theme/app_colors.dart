@@ -25,5 +25,13 @@ class AppColors {
   static const mediumBlack = Color(0xFF262826);
   static const brown = Color(0xFF251D0F);
 
+  static const Color pastelRed = Color(0xFFFF6961);
+  static const Color pastelOrange = Color(0xFFE69E58);
+  static const Color pastelYellow = Color(0xFFE5C07B);
+  static const Color pastelGreen = Color(0xFF7DA67A);
+  static const Color pastelBlue = Color(0xFF7AA4D8);
+  static const Color pastelPurple = Color(0xFF8C6DAE);
+  static const Color pastelPink = Color(0xFFE19B9E);
+
  static const  List<Color> primaryGradient = [AppColors.lightGreen, AppColors.mediumGreen];
 }

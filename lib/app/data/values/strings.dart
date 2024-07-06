@@ -15,6 +15,10 @@ class Strings {
   static const goggle = 'Google';
   static const facebook = 'Facebook';
   static const continueWith = 'or continue with';
+  static const aboutUs = 'About us';
+  static const myBookings = 'My Bookings';
+  static const bookATable = 'Book a Table';
+  static const review = 'Review';
   static const findYouFavouriteRestaurant = 'Find Your Favourite Restaurant';
   static const onboardingTitleOne = 'Discover Your Perfect Dining Spot';
   static const onboardingTitleTwo = 'Find a restaurant that matches your taste and mood. Enjoy!';

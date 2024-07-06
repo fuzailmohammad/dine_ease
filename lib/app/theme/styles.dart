@@ -25,6 +25,12 @@ class Styles {
     fontSize: 18.0,
   );
 
+  static const tsGreyRegular14 = TextStyle(
+    color: AppColors.darkGrey,
+    fontWeight: FontWeight.w400,
+    fontSize: 14.0,
+  );
+
   static const tsWhiteBold30 = TextStyle(
     color: AppColors.white,
     fontWeight: FontWeight.w800,
@@ -64,6 +70,12 @@ class Styles {
 
   static const tsPrimaryColorSemiBold20 = TextStyle(
     color: AppColors.primaryColor,
+    fontWeight: FontWeight.w500,
+    fontSize: 20.0,
+  );
+
+  static const tsWhiteSemiBold20 = TextStyle(
+    color: AppColors.white,
     fontWeight: FontWeight.w500,
     fontSize: 20.0,
   );

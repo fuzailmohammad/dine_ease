@@ -1,23 +1,11 @@
+import 'package:dine_ease/app/data/models/dto/restaurant.dart';
+import 'package:dine_ease/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 
 class RestaurantDetailController extends GetxController {
-  //TODO: Implement RestaurantDetailController
+  final Restaurant restaurant = Get.arguments;
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  void onTapBooking() {
+    Get.toNamed(Routes.BOOKING_DETAIL, arguments: restaurant);
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
 }
