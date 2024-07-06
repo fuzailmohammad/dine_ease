@@ -25,19 +25,19 @@ DineEase is a Flutter-based mobile application designed to streamline the restau
 ![Screenshot 4](screenshots/3.jpg)
 *Map view showing real-time location.*
 
-![Screenshot 6](screenshots/6.png)
+![Screenshot 6](screenshots/6.jpg)
 *Booking confirmation screen.*
 
 ![Screenshot 7](screenshots/10.jpg)
 *Payment gateway integration.*
 
-![Screenshot 8](screenshots/2.png)
+![Screenshot 8](screenshots/2.jpg)
 
-![Screenshot 9](screenshots/5.png)
+![Screenshot 9](screenshots/5.jpg)
 
-![Screenshot 10](screenshots/7.png)
+![Screenshot 10](screenshots/7.jpg)
 
-![Screenshot 10](screenshots/8.png)
+![Screenshot 10](screenshots/8.jpg)
 
 ## Getting Started
 
